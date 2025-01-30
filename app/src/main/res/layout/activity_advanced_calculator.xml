@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvancedCalculatorActivity"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="end|bottom"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="0"
+        android:textColor="@color/white"
+        style="@style/buttonsRow"/>
+
+    <LinearLayout
+        style="@style/buttonsRow">
+
+        <Button
+            style="@style/numberButton"
+            android:onClick="allClearOnClickFunction"
+            android:text="AC"/>
+        <Button
+            style="@style/numberButton"
+            android:onClick="backSpaceOnClickFunction"
+            android:text="C"/>
+        <Button
+            style="@style/numberButton"
+            android:onClick="plusMinusFunction"
+            android:text="+/-"/>
+        <Button
+            style="@style/numberButton"
+            android:text="log"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonsRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="sin"
+            android:textAllCaps="false"/>
+        <Button
+            style="@style/numberButton"
+            android:text="cos"
+            android:textAllCaps="false"/>
+        <Button
+            style="@style/numberButton"
+            android:text="tan"
+            android:textAllCaps="false"/>
+        <Button
+            style="@style/numberButton"
+            android:text="ln"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonsRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="sqrt"
+            android:textAllCaps="false"/>
+        <Button
+            style="@style/numberButton"
+            android:text="x^2"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/pow"
+            style="@style/functionalButton"
+            android:text="x^y"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/division"
+            style="@style/functionalButton"
+            android:text="/"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonsRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="7"/>
+        <Button
+            style="@style/numberButton"
+            android:text="8"/>
+        <Button
+            style="@style/numberButton"
+            android:text="9" />
+        <Button
+            android:id="@+id/multiplication"
+            style="@style/functionalButton"
+            android:textAllCaps="false"
+            android:text="x"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonsRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="4"/>
+        <Button
+            style="@style/numberButton"
+            android:text="5"/>
+        <Button
+            style="@style/numberButton"
+            android:text="6" />
+        <Button
+            android:id="@+id/subtraction"
+            style="@style/functionalButton"
+            android:text="-"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonsRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="1"/>
+        <Button
+            style="@style/numberButton"
+            android:text="2"/>
+        <Button
+            style="@style/numberButton"
+            android:text="3" />
+        <Button
+            android:id="@+id/addition"
+            style="@style/functionalButton"
+            android:text="+"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonsRow">
+
+        <Button
+            style="@style/numberButton"
+            android:layout_weight="2"
+            android:text="0"/>
+        <Button
+            style="@style/numberButton"
+            android:text="."/>
+        <Button
+            style="@style/functionalButton"
+            android:onClick="equalsAction"
+            android:text="=" />
+    </LinearLayout>
+
+</LinearLayout>

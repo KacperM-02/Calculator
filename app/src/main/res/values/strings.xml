@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="simple_button">Simple</string>
+    <string name="advanced_button">Advanced</string>
+    <string name="about_me_button">About</string>
+    <string name="exit_button">Exit</string>
+    <string name="about_me_activity">Kacper Michalec 240751</string>
+    <string name="about_me_page">About me</string>
+</resources>
